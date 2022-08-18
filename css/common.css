@@ -23,21 +23,22 @@ body { margin: 0 auto; font-family: 'SpoqaHanSansNeo-Regular';}
 #member li a {font-size: 14px; color:#000;}
 #member { position: absolute; right:50px; top:33px;}
 .depth1 { display: flex;}
-.depth1 > li { position: relative;  width: 160px; text-align: center;}
-.depth1 > li > a {display: block; width: 160px; height: 80px; padding-top: 30px; box-sizing: border-box; color: #000; font-size: 20px}
+.depth1 > li { position: relative; text-align: center;}
+.depth1 > li > a {display: block; height: 80px; padding: 30px 25px 0; box-sizing: border-box; color: #000; font-size: 20px}
 .depth2 li {line-height: 50px;}
 .depth2 li a {color: #000}
 @media screen and (min-width:1400px) {
 .gnbView {display: none;}
 #header.on div {border-bottom: 1px solid #dedede;}
 #header.on { height: 400px; background: #fff;}
-#gnb {margin-left: 200px;}
+#gnb {margin-left: 250px;}
 #header.on .depth1 > li:hover { border-bottom: 3px solid #4096d4; }
 .depth2 {position: absolute; top:50px; width: 100%; box-sizing: border-box; padding:30px 0}
 #header.on .depth2 li a:hover {font-weight: bold; color:#4096d4;}
 }
 @media screen and (max-width: 1399px) {
-        #member {right: 220px;}
+        #header {position: fixed; top:0; left:0;}
+        #member {right: 150px;}
         .gnbView {display: block; position: absolute;  top: 20px; right: 20px; z-index: 999990 ;}
         #gnb { position: fixed; top: 80px; right: -200px; width: 200px; height: 100vh;
                 background: #fff; font-size: 24px; transition: 0.5s right;}
@@ -47,145 +48,12 @@ body { margin: 0 auto; font-family: 'SpoqaHanSansNeo-Regular';}
 
 }
 /* main */
-/* section 1 */
-#consulting {position: relative; width: 100%; height: 75vh; margin-top: 80px;
-        background:url(../images/consulting_bg.png)  no-repeat center center / cover}
-#consulting #textWrap { position: absolute; left:calc(50% - 500px); top: calc(50% - 160px);
-                 width: 550px; height: 220px;
-                display: flex; flex-direction: column; align-items: center;
-                }
-#consulting #textWrap div {font-size: 50px; margin-bottom:30px;  font-weight: bold; line-height: 40px;
-                        opacity: 0;}
-#consulitng #textWrap span.cesColor {color:#4096d4}
-#consulting #textWrap a {display:block; width: 200px; height: 50px; line-height: 50px; color:#fff;
-                background:#0074b7; text-align: center; font-size: 19PX; opacity: 0}
-@media screen and (max-width:999px) {
-        #consulting {height: 700px;}
-        #consulting #textWrap {left:calc(50% - 350px); top: calc(50% - 160px);
-                width: 550px; height: 220px;
-               }
-                                
-}
-/* section 2 */
-#cescoInfo {position: relative;;width: 100%; height: 900px; background: #e7e7e7;}
-#cescoInfo > div {width: 1200px; padding-top: 150px; margin: 0 auto;
-                        padding-left: 50px;}
-#infoImg {width: 560px; height: 590px;
-        background: url(../images/infoImg.png) no-repeat center; 
-        border-radius: 30px;}
-#cescoInfo article {position: absolute; top:170px;width: 1200px;}
-#cescoInfo article > div {padding: 50px 0 50px 500px}
-#cescoInfo article > div p {font-size: 45px; font-weight: bold;}
-#cescoInfo article > div p span {color:#4096d4}
-#cescoInfo article > p {margin:0 0 50px 600px; font-size: 20px; line-height: 35px;}
-#cescoInfo article a {display:block; margin-left:600px; width: 200px; height: 50px; line-height: 50px; color:#fff;
-        background:#0074b7; text-align: center; font-size: 19PX;}
-@media screen and (max-width:999px) {
-        #cescoInfo {height: 1500px;}
-        #cescoInfo > div {width: 100%;}
-        #cescoInfo #infoImg {margin-left: 150px;}
-        #cescoInfo article {width: 800px; top:650px;}
-        #cescoInfo article > div {padding: 50px 0 50px 30px}
-        #cescoInfo article > p {margin:0 0 50px 70px;}
-        #cescoInfo article a {margin-left:70px;}
-}
-/* section 3 */
-#cescoService {width: 100%; height: 1000px; background: #fff;}
-#serviceWrap {position: relative;width: 100%; margin-top: 130px; display: flex; flex-direction: column; justify-content: center; align-items: center;}
-#serviceWrap > a {display:block; width: 200px; height: 50px; line-height: 50px; color:#fff;
-        background:#0074b7; text-align: center; font-size: 19PX;}
-#cescoService h2 {font-size: 45px; text-align: center; margin-bottom: 30px;}
-#cescoService p {font-size: 20px; text-align: center; margin-bottom: 30px}
-/*  */
-#slider {width: 100%; overflow:hidden; margin-top: 100px;}
-#sliderWrap { position: relative; width: 1200px; margin: 0 auto;}
-/*  */
-#sliderList {display: flex; width: 4700px; margin-left: -700px;}
-#sliderList li {width: 500px; height: 300px; margin: 100px 100px 0;
-                font-size: 20px; text-align: center;}
-#sliderList li:nth-child(2) {width: 1000px; height: 600px;  margin-top: 0;}
-#sliderList li a {color:#000; font-size: 20px;}
-#sliderList li:nth-child(2) a {font-size: 30px;}
-#sliderList li > div {width: 500px; height: 250px;
-        background: no-repeat center center / cover;
-        border-radius: 15px; margin-bottom: 20px;}
-#sliderList li:nth-child(2) > div {width: 1000px; height: 500px; border-radius: 30px;}
-#sliderList li.slider1 > div {background-image: url(../images/hc.png);}
-#sliderList li.slider2 > div {background-image: url(../images/hc.png);}
-#sliderList li.slider3 > div {background-image: url(../images/hc.png);}
-#sliderList li.slider4 > div {background-image: url(../images/hc.png);}
-#sliderList li.slider5 > div {background-image: url(../images/hc.png);}
-#sliderList li.slider6 > div {background-image: url(../images/hc.png);}
-/*  */
-#btnPos button { position: absolute; top: 200px; z-index: 999;
-        width: 70px; height: 100px; background: rgba(255, 255, 255, 0); color:#4096d4;
-        line-height: 90px; font-size: 70px; text-align: center;
-        border: 0px solid rgba(255, 255, 255, 0);}
-#btnPos button.prev { left: 0; }
-#btnPos button.prev::after { content: "<"; }
-#btnPos button.next { right: 0; }
-#btnPos button.next::after { content: ">"; }
-#btnPos button span { position: absolute; left: -9999px; }
-@media screen and (max-width:999px){
-        #cescoService p {position: absolute; left:-9999px;}
-        #serviceWrap > a {position: absolute; left:-9999px;}
-        
-}
-/* section 4 */
-#cescoMembers {width: 100%; height: 1000px; background: #e7e7e7; padding-top: 80px; box-sizing: border-box;}
-#cescoMembers h2 {font-size: 45px; text-align: center; margin-bottom: 30px;}
-#cescoMembers div p {font-size: 20px; text-align: center;  margin-bottom: 80px;}
-#membersWrap {display: flex; justify-content:space-between;
-        width: 1200px; margin: 0 auto;  padding: 0 50px;
-        box-sizing: border-box;
-      }
-#membersWrap > div {position: relative;;text-align: center; overflow:hidden; margin: 0 auto;
-                box-sizing: border-box; border-radius: 25% 0 25% 0;}
-#membersWrap div div {position: absolute; bottom:40px; opacity:0; width: 500px; height: 150px; margin:  0 auto;}
-#membersWrap div div p {font-size: 22px; line-height: 40px;}
-#membersWrap div h3 {font-size: 40px; font-weight: bold; padding-top: 500px;
-                        margin-bottom: 30px;}
-#membersWrap div.home {width: 500px; height: 630px; color:#fff;
-        background: url(../images/cesco_members.png) no-repeat center; background-size: 500px; transition: 1s;}
-/* #membersWrap div.home:hover {background-image: url(../images/cesco_members_over.png)} */
-#membersWrap div.food {width: 500px; height: 630px; color:#009ea7;
-        background: url(../images/cesco_food.png) no-repeat center ; background-size: 500px; transition: 1s;}
-#membersWrap div.food:hover {background-image: url(../images/cesco_food_over.png)}
-@media screen and (max-width:999px) {
-        #membersWrap {width: 800px;}
-}
-/* section 5 */
-#bugInfo {width: 100%; height: 400px; background:#fff;}
-#bugInfo > div {height: 400px; margin-top:60px}
-#bugInfo div h3 {font-size: 45px; text-align: center; margin-bottom: 30px;}
-#bugInfo div p {font-size: 20px; text-align: center; margin-bottom: 30px;}
-#bugWrap {display: flex; justify-content: center;}
-#bugWrap ul {display: flex;}
-#bugWrap ul li.bug {width: 130px; height: 150px;
-                    margin: 0 30px 0;background: no-repeat center; background-size: 130px;
-                    background-position: center top;
-                    display:flex; justify-content: center; align-items: flex-end;
-                    font-size: 18px;}
-#bugWrap ul li.roach {background-image: url(../images/icon_roach.png); }
-#bugWrap ul li.fly {background-image: url(../images/icon_fly.png);}
-#bugWrap ul li.fly2 {background-image: url(../images/icon_mayfly.png);}
-#bugWrap ul li.mouse {background-image: url(../images/icon_mouse.png);}
-#bugWrap ul li.bird {background-image: url(../images/icon_bird.png);}
-#bugWrap ul li.microbe {background-image: url(../images/icon_micro.png);}
-#bugWrap ul li.roach:hover {background-image: url(../images/icon_roach_over.png);}
-#bugWrap ul li.fly:hover {background-image: url(../images/icon_fly_over.png);}
-#bugWrap ul li.fly2:hover {background-image: url(../images/icon_mayfly_over.png);}
-#bugWrap ul li.mouse:hover {background-image: url(../images/icon_mouse_over.png);}
-#bugWrap ul li.bird:hover {background-image: url(../images/icon_bird_over.png);}
-#bugWrap ul li.microbe:hover {background-image: url(../images/icon_micro_over.png);}
-@media screen and (max-width:999px) {
-        #bugWrap ul {width: 800px;}
-}
+
 /* footer */
 #footer {width: 100%; height: 180px; background:#dedede; padding: 25px 0; box-sizing: border-box;
         font-size: 14px;}
 #footerWrap {width: 1000px; display: flex; justify-content: space-between;
-                margin: 0 auto;}
+                margin: 0 auto; padding: 0 20px 0;}
 #footerImg { width: 112px; height: 57px; background: url(../images/cesco_logo.png) no-repeat
                 center; margin: 20px 0 0 40px ;}
 #footer #fo ul {display: flex;}
@@ -195,5 +63,5 @@ body { margin: 0 auto; font-family: 'SpoqaHanSansNeo-Regular';}
 #footer #fo p {margin-bottom: 5px;}
 #footer #fo address {text-decoration:none;}
 @media screen and (max-width:999px) {
-        #footerWrap {width: 800px;}
+        #footerWrap {width: 100%;}
 }

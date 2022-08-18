@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* section 1 */
+#consulting {position: relative; width: 100%; height: 75vh; margin-top: 80px;
+    background:url(../images/consulting_bg.png)  no-repeat center center / cover}
+#consulting #textWrap { position: absolute; left:calc(50% - 500px); top: calc(50% - 160px);
+             width: 550px; height: 220px;
+            display: flex; flex-direction: column; align-items: center;
+            }
+#consulting #textWrap div {font-size: 50px; margin-bottom:30px;  font-weight: bold; line-height: 40px;
+                    opacity: 0;}
+#consulitng #textWrap span.cesColor {color:#4096d4}
+#consulting #textWrap a {display:block; width: 200px; height: 50px; line-height: 50px; color:#fff;
+            background:#0074b7; text-align: center; font-size: 19PX; opacity: 0;
+            padding-right: 25px;
+            transition: 0.5s;}
+#consulting #textWrap a:hover {border-radius: 20px 0 20px; padding-right: 0px;}
+#consulting #textWrap > a > div {display: inline; height: 50px; opacity: 0; font-size: 20px;
+                             line-height: 50px;}
+@media screen and (max-width:999px) {
+    #consulting {height: 700px;}
+    #consulting #textWrap {left:calc(50% - 350px); top: calc(50% - 160px);
+            width: 550px; height: 220px;
+           }
+}
+/* section 2 */
+#cescoInfo {position: relative;;width: 100%; height: 900px; background: #e7e7e7;
+            overflow: hidden;}
+#cescoInfo > div {width: 1200px; padding-top: 150px; margin: 0 auto;
+                    padding-left: 50px;}
+#infoImg {width: 560px; height: 590px;
+    background: url(../images/infoImg.png) no-repeat center;
+    border-radius: 30px;}
+#cescoInfo article {position: absolute; top:170px;width: 1200px; padding-right: 0;}
+#cescoInfo article > div {padding: 50px 0 50px 500px}
+#cescoInfo article > div p {font-size: 45px; font-weight: bold;}
+#cescoInfo article > div p span {color:#4096d4}
+#cescoInfo article > p {margin:0 0 50px 600px; font-size: 20px; line-height: 35px;}
+#cescoInfo article a {display:block; margin-left:600px; width: 200px; height: 50px; line-height: 50px; color:#fff;
+    background:#0074b7; text-align: center; font-size: 19PX;
+    padding-Right:30px; transition: 0.5s;}
+#cescoInfo article a > div {display: inline; height: 50px; opacity: 0; font-size: 20px;
+                            line-height: 50px;}
+#cescoInfo article a:hover {border-radius: 20px 0 20px; padding-right: 0px;}
+@media screen and (max-width:999px) {
+    #cescoInfo {height: 1300px;}
+    #cescoInfo > div {width: 100%;}
+    #cescoInfo #infoImg {margin-left: 150px; width: 60%;}
+    #cescoInfo article {width:100%; top:650px;}
+    #cescoInfo article > div {padding: 50px 0 50px 30px}
+    #cescoInfo article > p {margin:0 0 50px 70px;}
+    #cescoInfo article a {margin-left:70px;}
+}
+/* section 3 */
+#cescoService {width: 100%; height: 1000px; background: #fff;}
+#serviceWrap {position: relative;width: 100%; margin-top: 130px; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+#serviceWrap > a {display:block; width: 200px; height: 50px; line-height: 50px; color:#fff;
+    background:#0074b7; text-align: center; font-size: 19PX;
+    padding-Right:28px; transition: 0.5s;}
+#serviceWrap > a:hover {border-radius: 20px 0 20px; padding-right: 0px;}
+#serviceWrap > a > div {display: inline; height: 50px; opacity: 0; font-size: 20px;
+    line-height: 50px;}
+#cescoService h2 {font-size: 45px; text-align: center; margin-bottom: 30px;}
+#cescoService p {font-size: 20px; text-align: center; margin-bottom: 30px}
+/*  */
+#slider {width: 100%; overflow:hidden; margin-top: 100px;}
+#sliderWrap {position: relative; margin: 0 auto;}
+#sliderList {display: flex;}
+#sliderList li {font-size: 20px; text-align: center;}
+#sliderList li a {color:#000; font-size: 20px;}
+#sliderList li > div { background: no-repeat center center / cover;
+                      border-radius: 15px;}
+#sliderList li.slider1 > div {background-image: url(../images/slide1.png);}
+#sliderList li.slider2 > div {background-image: url(../images/slide2.jpg);}
+#sliderList li.slider3 > div {background-image: url(../images/slide3.png);}
+#sliderList li.slider4 > div {background-image: url(../images/slide4.png);}
+#sliderList li.slider5 > div {background-image: url(../images/slide5.jpg);}
+#sliderList li.slider6 > div {background-image: url(../images/slide6.jpg);}
+/*  */
+@media screen and (min-width:1000px) {
+  #sliderWrap {width: 1200px;}
+  #sliderList {position: relative; width: 4700px; margin-left: -700px;}
+  #sliderList li {width: 500px; height: 300px; margin: 100px 100px 0;}
+  #sliderList li:nth-child(2) {width: 1000px; height: 600px;  margin-top: 0;}
+  #sliderList li:nth-child(2) a {font-size: 30px;}
+  #sliderList li:nth-child(2) > div {width: 1000px; height: 500px; border-radius: 30px;}
+  #sliderList li > div {width: 500px; height: 250px;  margin-bottom: 20px;}
+  #btnPos button { position: absolute; top: 200px; z-index: 999;
+      width: 70px; height: 100px; background: rgba(255, 255, 255, 0); color:#4096d4;
+      line-height: 90px; font-size: 70px; text-align: center;
+      border: 0px solid rgba(255, 255, 255, 0);}
+  #btnPos button.prev { left: 0; }
+  #btnPos button.prev::after { content: "<"; }
+  #btnPos button.next { right: 0; }
+  #btnPos button.next::after { content: ">"; }
+  #btnPos button span { position: absolute; left: -9999px;}
+}
+@media screen and (max-width:999px){
+    #cescoService p {position: absolute; left:-9999px;}
+    #serviceWrap > a {position: absolute; left:-9999px;}
+    #sliderWrap {width: 100%;}
+    #sliderList li {width: 400px; height: 240px; margin: 0 20px;}
+    #sliderList li > div {width: 400px; height: 200px; margin-bottom: 10px}
+    #btnPos button {display: none;}
+    #sliderList {width: 2520px;}
+}
+/* section 4 */
+#cescoMembers {width: 100%; height: 1000px; background: #e7e7e7; padding-top: 80px; box-sizing: border-box;}
+#cescoMembers h2 {font-size: 45px; text-align: center; margin-bottom: 30px;}
+#cescoMembers div p {font-size: 20px; text-align: center;  margin-bottom: 80px;}
+#membersWrap {display: flex; justify-content:space-between;
+          width: 1200px; margin: 0 auto;  padding: 0 50px;
+          box-sizing: border-box;
+          }
+#membersWrap > div {position: relative;;text-align: center; overflow:hidden; margin: 0 auto;
+            box-sizing: border-box; border-radius: 25% 0 25% 0;}
+#membersWrap div div {position: absolute; bottom:40px; opacity:0; width: 500px; height: 150px; margin:  0 auto;}
+#membersWrap div div p {font-size: 22px; line-height: 40px;}
+#membersWrap div h3 {font-size: 40px; font-weight: bold; padding-top: 500px;
+                    margin-bottom: 30px;}
+#membersWrap div.home {width: 500px; height: 630px; color:#fff;
+    background: url(../images/cesco_members.png) no-repeat center; background-size: 500px; transition: 1s margin-top;}
+/* #membersWrap div.home:hover {background-image: url(../images/cesco_members_over.png)} */
+#membersWrap div.food {width: 500px; height: 630px; color:#009ea7;
+    background: url(../images/cesco_food.png) no-repeat center ; background-size: 500px; transition: 1s margin-top;}
+#membersWrap div.food:hover {background-image: url(../images/cesco_food_over.png)}
+@media screen and (max-width:999px) {
+    #cescoMembers div p {margin-bottom: 40px;}
+    #membersWrap {width: 100%;}
+    #membersWrap div.home {width: 50%; background-size: 100%;}
+    #membersWrap div.food {width: 50%; background-size: 100%;
+                            background-image: url(../images/cesco_food_over.png);}
+    #membersWrap > div div {width: 100%; opacity: 1; bottom: 70px; padding: 0 20px 0;}
+    #membersWrap div div p {font-size: 18px; line-height: 30px;}
+    #membersWrap > div h3 {padding-top: 350px;font-size: 30px; margin-bottom: 10px;}
+}
+/* section 5 */
+#bugInfo {width: 100%; height: 400px; background:#fff;}
+#bugInfo > div {height: 400px; margin-top:60px}
+#bugInfo div h3 {font-size: 45px; text-align: center; margin-bottom: 30px;}
+#bugInfo div p {font-size: 20px; text-align: center; margin-bottom: 30px;}
+#bugWrap {display: flex; justify-content: center;}
+#bugWrap ul {display: flex;}
+#bugWrap ul li.bug {width: 130px; height: 150px;
+                margin: 0 30px 0;background: no-repeat center; background-size: 130px;
+                background-position: center top;
+                display:flex; justify-content: center; align-items: flex-end;
+                font-size: 18px;}
+#bugWrap ul li.roach {background-image: url(../images/icon_roach.png); }
+#bugWrap ul li.fly {background-image: url(../images/icon_fly.png);}
+#bugWrap ul li.fly2 {background-image: url(../images/icon_mayfly.png);}
+#bugWrap ul li.mouse {background-image: url(../images/icon_mouse.png);}
+#bugWrap ul li.bird {background-image: url(../images/icon_bird.png);}
+#bugWrap ul li.microbe {background-image: url(../images/icon_micro.png);}
+#bugWrap ul li.roach:hover {background-image: url(../images/icon_roach_over.png);}
+#bugWrap ul li.fly:hover {background-image: url(../images/icon_fly_over.png);}
+#bugWrap ul li.fly2:hover {background-image: url(../images/icon_mayfly_over.png);}
+#bugWrap ul li.mouse:hover {background-image: url(../images/icon_mouse_over.png);}
+#bugWrap ul li.bird:hover {background-image: url(../images/icon_bird_over.png);}
+#bugWrap ul li.microbe:hover {background-image: url(../images/icon_micro_over.png);}
+@media screen and (max-width:999px) {
+    #bugInfo {height: 540px;}
+    #bugWrap ul {width: 570px; flex-wrap: wrap;}
+    #bugWrap ul li.bug {margin-bottom: 20px;}
+}
