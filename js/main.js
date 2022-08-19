@@ -23,8 +23,12 @@ $('#serviceWrap > a').hover(function () {
   $('#serviceWrap > a > div').stop().animate({opacity:0})
 })
 //
+
 $("#sliderList").prepend($("#sliderList li:last"))
+$('#sliderList li:eq(1)').css({width: 1000, height:600, marginTop:0, opacity:1})
+$('#sliderList li:eq(1) div').css({width: 1000, height:500, borderRadius: 30})
 let slider = function() {
+  
   $("#sliderList li").not($("#sliderList li:eq(1)")).css({ opacity: 0.5 })
   $('.next').on('click', function() {
   $("#sliderList:not(:animated)").animate({ marginLeft: `-=700` }, 600, function() {
@@ -54,11 +58,11 @@ let slider = function() {
   })
 }
 let mobileSlider = function () {
+  $('#sliderList li:eq(1)').css({width:400, height:240, marginTop:0, opacity:1})
+  $('#sliderList li:eq(1) div').css({width: 400, height:200, borderRadius: 15})
 }
 let sliderAction = function () {
   if ( $(window).innerWidth() < 1000 ) {
-    $('.next').off();
-    $('.prev').off();
     mobileSlider();
   }
   else {

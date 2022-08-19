@@ -14,7 +14,7 @@
             padding-right: 25px;
             transition: 0.5s;}
 #consulting #textWrap a:hover {border-radius: 20px 0 20px; padding-right: 0px;}
-#consulting #textWrap > a > div {display: inline; height: 50px; opacity: 0; font-size: 20px;
+#consulting #textWrap > a > div {opacity: 0; display: inline; height: 50px; font-size: 20px;
                              line-height: 50px;}
 @media screen and (max-width:999px) {
     #consulting {height: 700px;}
@@ -66,7 +66,7 @@
 #sliderWrap {position: relative; margin: 0 auto;}
 #sliderList {display: flex;}
 #sliderList li {font-size: 20px; text-align: center;}
-#sliderList li a {color:#000; font-size: 20px;}
+#sliderList li a {display:block; color:#000; font-size: 20px;}
 #sliderList li > div { background: no-repeat center center / cover;
                       border-radius: 15px;}
 #sliderList li.slider1 > div {background-image: url(../images/slide1.png);}
@@ -75,33 +75,34 @@
 #sliderList li.slider4 > div {background-image: url(../images/slide4.png);}
 #sliderList li.slider5 > div {background-image: url(../images/slide5.jpg);}
 #sliderList li.slider6 > div {background-image: url(../images/slide6.jpg);}
+#btnPos button.prev { left: 0; }
+#btnPos button.prev::after { content: "<"; }
+#btnPos button.next { right: 0; }
+#btnPos button.next::after { content: ">"; }
+#btnPos button span { position: absolute; left: -9999px;}
+#btnPos button { position: absolute; top: 200px; z-index: 999;
+    width: 70px; height: 100px; background: rgba(255, 255, 255, 0); color:#4096d4;
+    line-height: 90px; font-size: 70px; text-align: center;
+    border: 0px solid rgba(255, 255, 255, 0);}
 /*  */
 @media screen and (min-width:1000px) {
   #sliderWrap {width: 1200px;}
   #sliderList {position: relative; width: 4700px; margin-left: -700px;}
   #sliderList li {width: 500px; height: 300px; margin: 100px 100px 0;}
-  #sliderList li:nth-child(2) {width: 1000px; height: 600px;  margin-top: 0;}
+  /* #sliderList li:nth-child(2) {width: 1000px; height: 600px;  margin-top: 0;} */
   #sliderList li:nth-child(2) a {font-size: 30px;}
-  #sliderList li:nth-child(2) > div {width: 1000px; height: 500px; border-radius: 30px;}
+  /* #sliderList li:nth-child(2) > div {width: 1000px; height: 500px; border-radius: 30px;} */
   #sliderList li > div {width: 500px; height: 250px;  margin-bottom: 20px;}
-  #btnPos button { position: absolute; top: 200px; z-index: 999;
-      width: 70px; height: 100px; background: rgba(255, 255, 255, 0); color:#4096d4;
-      line-height: 90px; font-size: 70px; text-align: center;
-      border: 0px solid rgba(255, 255, 255, 0);}
-  #btnPos button.prev { left: 0; }
-  #btnPos button.prev::after { content: "<"; }
-  #btnPos button.next { right: 0; }
-  #btnPos button.next::after { content: ">"; }
-  #btnPos button span { position: absolute; left: -9999px;}
 }
 @media screen and (max-width:999px){
+    #cescoService {height: 700px;}
     #cescoService p {position: absolute; left:-9999px;}
+    #serviceWrap {margin-top: 100px;}
     #serviceWrap > a {position: absolute; left:-9999px;}
     #sliderWrap {width: 100%;}
     #sliderList li {width: 400px; height: 240px; margin: 0 20px;}
     #sliderList li > div {width: 400px; height: 200px; margin-bottom: 10px}
-    #btnPos button {display: none;}
-    #sliderList {width: 2520px;}
+    #sliderList {width: 2520px; margin-left: calc(0% - 200px);}
 }
 /* section 4 */
 #cescoMembers {width: 100%; height: 1000px; background: #e7e7e7; padding-top: 80px; box-sizing: border-box;}
