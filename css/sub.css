@@ -1,16 +1,16 @@
 @charset "utf-8";
-section {margin-top: 80px;}
+#section {margin-top: 80px;}
 #sectionWrap {width: 1200px; margin: 0 auto;}
 h3 {text-align: center; font-size: 50px; margin-top: 180px;}
-#solutionList {width: 1074px; margin: 90px auto 0; display: flex;}
-#solutionList li {width: 180px; text-align: center; height: 50px; line-height: 50px;
+#solutionList {width: 97%; margin: 90px auto 0; display: flex;}
+#solutionList li {width: 16.6%; text-align: center; height: 50px; line-height: 50px;
                     border: 1px solid #8c8c8c; margin-left: -1px;
                     }
 #solutionList li.selec {background: #0074b7;}
 #solutionList li.selec a {color: #fff;}
 #solutionList li a {display:block; color: #000;}
+#solImg {width: 100%; height: 500px; margin-top: 100px; }
 .solText {font-size: 22px; text-align: center; margin-top: 100px;}
-
 
 #apply {width: 1200px; margin: 150px auto;}
 #apply div {width: 1100px; height: 180px; margin: 0 auto;
@@ -21,3 +21,105 @@ h3 {text-align: center; font-size: 50px; margin-top: 180px;}
 #apply div a {font-size: 20px; display: block; width: 200px; height: 50px; line-height: 50px;
             background: #0074b7;color: #fff; margin: 20px auto 0; transition: 0.5s;}
 #apply div a:hover {border-radius: 15px 0 15px 0;}
+@media screen and (max-width:1199px) {
+    #sectionWrap {width: 100%;}
+    #apply {width: 100%; padding:0 25px }
+    #apply div {width: 100%;}
+}
+/* sub1*/
+#solStep {margin-top: 120px;}
+#solStep > ul {width: 1000px; display: flex; margin: 0 auto;}
+#solStep > ul li {width: 250px; height: 30px; font-size: 30px;
+                 text-align: center; line-height: 30px;
+                 color: #c2c2c2;}
+#solStep > ul li.on {color:#0074b7; font-weight: bold;}
+#solImg.slide1 {background: url(../images/slide1.png) no-repeat center / cover;}
+/*  */
+#stepWrap {display: flex; width: 1130px; margin: 70px auto 0;}
+#imgWrap {width: 540px; height: 400px; overflow: hidden;}
+#imgWrap ul {width: 2160px; display: flex; flex-wrap: nowrap;}
+#imgWrap ul li { width: 540px; height: 400px; border-radius: 10px;}
+#imgWrap ul li.stepImg1 {background: url(../images/step1.jpg) no-repeat center / cover;}
+#imgWrap ul li.stepImg2 {background: url(../images/step2.jpg) no-repeat center / cover;}
+#imgWrap ul li.stepImg3 {background: url(../images/step3.jpg) no-repeat center / cover;}
+#imgWrap ul li.stepImg4 {background: url(../images/step4.jpg) no-repeat center / cover;}
+.stepContent {width: 540px; margin-left: 50px; overflow: hidden;}
+.stepContent p:nth-child(1) {font-size: 25px;}
+.stepContent p:nth-child(2) {font-size: 20px; margin-top: 35px; line-height: 30px;}
+.stepContent ul {display:flex; width: 2160px;}
+.stepContent ul li {width: 540px;}
+/*  */
+#clientSystem {margin: 150px auto 0;}
+#clientSystem > p {font-size: 30px; text-align: center;}
+#clientSystem ul { margin: 80px auto 0;
+                    width: 920px; display: flex; flex-wrap:wrap; justify-content: space-between;}
+#clientSystem ul li {width: 450px; height: 250px; border: 2px solid #dedede;
+                    border-radius: 10px; margin-bottom: 20px; text-align: center;
+                    padding-top: 30px; overflow: hidden;}
+#clientSystem ul li div {width: 100px; height: 100px; background: no-repeat center / cover;
+                        margin: 15px auto 0; }
+#clientSystem ul li div.client01 {background-image: url(../images/client01.png);}
+#clientSystem ul li div.client02 {background-image: url(../images/client02.png);}
+#clientSystem ul li div.client03 {background-image: url(../images/client03.png);}
+#clientSystem ul li div.client04 {background-image: url(../images/client04.png);}
+#clientSystem ul li p {font-size: 25px;}
+#clientSystem ul li p:nth-child(3) {font-size: 22px; color: #0074b7; opacity: 0;}
+/*sub2*/
+#solImg.slide2 {background: url(../images/slide2.jpg) no-repeat center / cover;}
+/*  */
+#sol2 {margin: 100px auto 0;}
+#sol2 > p {text-align: center;}
+#sol2 > p:first-child {font-size: 30px; margin-bottom: 50px; font-weight:bold;}
+#sol2 > p:last-child {font-size: 20px; margin-bottom: 30px;}
+#solContent2 {width: 800px; display: flex; justify-content: space-around; margin: 0 auto;}
+#solContent2 div {display: flex; align-items: center; justify-content: center;
+            width: 200px; height: 200px; border: 1px solid #0074b7;
+            border-radius: 50%; margin: 30px auto 50px;
+            text-align: center;}
+#solService2 {margin: 100px auto 0; text-align: center;}
+#solService2 > p {font-size: 20px; margin-bottom: 100px;}
+#solService2 div {width: 600px; height: 400px; margin: 0 auto;
+            background: url(../images/sub22.jpg) no-repeat center}
+/* sub3 */
+#solImg.slide3 {background: url(../images/slide3.png) no-repeat center / cover;}
+/* sub4 */
+#solImg.slide4 {background: url(../images/slide4.png) no-repeat center / cover;}
+/*  */
+#sol4 {margin: 100px auto 0; text-align: center;}
+#sol4 h4 {font-size: 30px; margin-bottom: 20px;}
+#sol4 > p {font-size: 22px;}
+#sol4 ul {display: flex; justify-content: space-around; margin-top: 50px;}
+#sol4 ul li {width: 350px; height: 200px;}
+#sol4 ul li p:first-child {font-size: 25px; margin-bottom: 30px}
+#sol4 ul li p:last-child {font-size: 20px;}
+/*  */
+#solContent4 {margin: 100px auto 0; text-align: center; display: flex; justify-content: space-between; flex-flow: wrap;}
+#solContent4 .warterText {width: 100%; margin-bottom: 100px;}
+#solContent4 .warterText h4 {font-size: 30px; margin-bottom: 20px;}
+#solContent4 .warterText p {font-size: 25px;}
+#solContent4 .warterImg  {width: 600px; height: 450px; background: url(../images/wartercare.jpg) no-repeat center / cover;}
+#solContent4 .warterWrap {width: 600px; height: 450px; text-align: left;}
+#solContent4 .warterWrap div {margin-bottom: 30px;}
+#solContent4 .warterWrap div p:first-child {font-size: 25px; margin-bottom: 10px;
+                                    color:#0074b7;}
+#solContent4 .warterWrap div p:last-child {font-size:20px;}
+/* sub5 */
+#solImg.slide5 {background: url(../images/slide5.jpg) no-repeat center / cover;}
+#sol5 {margin: 0 auto; text-align: center;}
+#sol5 h4 {font-size: 30px; margin-top: 100px;}
+.cescoAir {width: 1200px; display: flex; flex-wrap:wrap; justify-content: space-between; margin-top: 50px;}
+.cescoAir > li {width: 600px; height: 150px; margin-top: 30px;}
+.cescoAir > li > ul {width: 420px; margin: 0 auto;}
+.cescoAir > li > ul > li:first-child {font-size: 22px; margin-bottom: 5px;
+            border-bottom: 1px solid #ccc; padding-bottom: 10px;}
+.cescoAir > li > ul > li:last-child {width: 400px;font-size: 18px; margin: 0 auto;}
+#airSystem {display: flex; justify-content: space-around; width: 1000px;margin: 70px auto 0;}
+#airSystem > div {display: flex; flex-direction: column; justify-content: center; align-items: center;
+                width: 300px; height: 150px;}
+#airSystem div.airStep {width: 60px; color: #fff; background: #0074b7; font-size: 20px;} 
+#airSystem div.airText {width: 250px;}
+#airSystem div.airText span {font-size: 25px;line-height: 50px;}
+#airSystem div.airNext {width: 50px;}
+
+/* sub6 */
+#solImg.slide6 {background: url(../images/slide6.jpg) no-repeat center / cover;}

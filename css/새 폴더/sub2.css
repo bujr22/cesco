@@ -1,0 +1,17 @@
+@charset "utf-8";
+#solImg {width: 100%; height: 500px; background: url(../images/slide2.jpg) no-repeat center / cover;
+        margin-top: 100px;}
+/*  */
+#sol2 {margin: 100px auto 0;}
+#sol2 > p {text-align: center;}
+#sol2 > p:first-child {font-size: 25px; margin-bottom: 50px;}
+#sol2 > p:last-child {font-size: 20px; margin-bottom: 30px;}
+#solContent2 {width: 800px; display: flex; justify-content: space-around; margin: 0 auto;}
+#solContent2 div {display: flex; align-items: center; justify-content: center;
+                width: 200px; height: 200px; border: 1px solid #000;
+                border-radius: 50%; margin: 30px auto 50px;
+                text-align: center;}
+#solService2 {margin: 100px auto 0; text-align: center;}
+#solService2 > p {font-size: 20px; margin-bottom: 100px;}
+#solService2 div {width: 600px; height: 400px; margin: 0 auto;
+                background: url(../images/sub22.jpg) no-repeat center}
