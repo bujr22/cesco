@@ -58,12 +58,13 @@ let slider = function() {
   })
 }
 let mobileSlider = function () {
-  $('#sliderList li:eq(1)').css({width:400, height:240, marginTop:0, opacity:1})
-  $('#sliderList li:eq(1) div').css({width: 400, height:200, borderRadius: 15})
+  
 }
 let sliderAction = function () {
   if ( $(window).innerWidth() < 1000 ) {
-    mobileSlider();
+    $('#sliderList li').css({opacity:1})
+  $('#sliderList li:eq(1)').css({width:400, height:240, marginTop:0})
+  $('#sliderList li:eq(1) div').css({width: 400, height:200, borderRadius: 15})
   }
   else {
     slider();

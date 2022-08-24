@@ -80,9 +80,9 @@
 #btnPos button.next { right: 0; }
 #btnPos button.next::after { content: ">"; }
 #btnPos button span { position: absolute; left: -9999px;}
-#btnPos button { position: absolute; top: 200px; z-index: 999;
-    width: 70px; height: 100px; background: rgba(255, 255, 255, 0); color:#4096d4;
-    line-height: 90px; font-size: 70px; text-align: center;
+#btnPos button { position: absolute; z-index: 9;
+     background: rgba(255, 255, 255, 0); color:#4096d4;
+     text-align: center;
     border: 0px solid rgba(255, 255, 255, 0);}
 /*  */
 @media screen and (min-width:1000px) {
@@ -93,6 +93,7 @@
   #sliderList li:nth-child(2) a {font-size: 30px;}
   /* #sliderList li:nth-child(2) > div {width: 1000px; height: 500px; border-radius: 30px;} */
   #sliderList li > div {width: 500px; height: 250px;  margin-bottom: 20px;}
+  #btnPos button {top:200px; width: 70px; height: 100px; line-height: 90px; font-size: 70px;}
 }
 @media screen and (max-width:999px){
     #cescoService {height: 700px;}
@@ -102,7 +103,10 @@
     #sliderWrap {width: 100%;}
     #sliderList li {width: 400px; height: 240px; margin: 0 20px;}
     #sliderList li > div {width: 400px; height: 200px; margin-bottom: 10px}
-    #sliderList {width: 2520px; margin-left: calc(0% - 200px);}
+    #sliderList {position: relative;width: 2520px; margin-left: calc(0% - 200px);}
+    #btnPos {width: 500px; height: 100px;}
+    #btnPos button {top:50px; width: 50px; height: 80px; line-height: 80px;
+                    font-size: 50px;}
 }
 /* section 4 */
 #cescoMembers {width: 100%; height: 1000px; background: #e7e7e7; padding-top: 80px; box-sizing: border-box;}
