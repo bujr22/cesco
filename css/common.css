@@ -63,5 +63,7 @@ body { margin: 0 auto; font-family: 'SpoqaHanSansNeo-Regular'; min-width: 800px;
 #footer #fo p {margin-bottom: 5px;}
 #footer #fo address {text-decoration:none;}
 @media screen and (max-width:999px) {
-        #footerWrap {width: 100%;}
+        #footer {font-size: 12px;}
+        #footerWrap {width: 100%;}      
+        #footer #fo ul li span a {font-size: 14px;}
 }

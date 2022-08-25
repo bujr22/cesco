@@ -26,3 +26,4 @@ $('#solStep ul li:eq(2)').on('click', function () {
 $('#solStep ul li:eq(3)').on('click', function () {
   $('#stepWrap ul').css({marginLeft:'-300%'})
 })
+// 
