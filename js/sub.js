@@ -18,11 +18,11 @@ $('#solStep ul li:eq(0)').on('click', function () {
   $('#stepWrap ul').css({marginLeft:0})
 })
 $('#solStep ul li:eq(1)').on('click', function () {
-  $('#stepWrap ul').css({marginLeft:-540})
+  $('#stepWrap ul').css({marginLeft:'-100%'})
 })
 $('#solStep ul li:eq(2)').on('click', function () {
-  $('#stepWrap ul').css({marginLeft:-1080})
+  $('#stepWrap ul').css({marginLeft:'-200%'})
 })
 $('#solStep ul li:eq(3)').on('click', function () {
-  $('#stepWrap ul').css({marginLeft:-1620})
+  $('#stepWrap ul').css({marginLeft:'-300%'})
 })

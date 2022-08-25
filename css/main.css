@@ -75,6 +75,10 @@
 #sliderList li.slider4 > div {background-image: url(../images/slide4.png);}
 #sliderList li.slider5 > div {background-image: url(../images/slide5.jpg);}
 #sliderList li.slider6 > div {background-image: url(../images/slide6.jpg);}
+
+#sliderList li:nth-child(2) { width: 1000px; height: 500px; margin-top: 0; opacity: 1 ;}
+#sliderList li:nth-child(2) div { width: 1000px; height: 500px;border-radius: 30 }
+
 #btnPos button.prev { left: 0; }
 #btnPos button.prev::after { content: "<"; }
 #btnPos button.next { right: 0; }
@@ -104,9 +108,7 @@
     #sliderList li {width: 400px; height: 240px; margin: 0 20px;}
     #sliderList li > div {width: 400px; height: 200px; margin-bottom: 10px}
     #sliderList {position: relative;width: 2520px; margin-left: calc(0% - 200px);}
-    #btnPos {width: 500px; height: 100px;}
-    #btnPos button {top:50px; width: 50px; height: 80px; line-height: 80px;
-                    font-size: 50px;}
+    #btnPos {position: absolute; left:-9999px;}
 }
 /* section 4 */
 #cescoMembers {width: 100%; height: 1000px; background: #e7e7e7; padding-top: 80px; box-sizing: border-box;}

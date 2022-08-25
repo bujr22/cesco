@@ -68,6 +68,19 @@ h3 {text-align: center; font-size: 50px; margin-top: 180px;}
 #clientSystem ul li div.client04 {background-image: url(../images/client04.png);}
 #clientSystem ul li p {font-size: 25px;}
 #clientSystem ul li p:nth-child(3) {font-size: 22px; color: #0074b7; opacity: 0;}
+@media screen and (max-width:999px) { 
+    #solStep > ul {width: 90%;}
+    #solStep > ul li {width: 25%;}
+    #stepWrap {width: 90%;}
+    #imgWrap {width: 50%;}
+    #imgWrap ul {width: 400%;}
+    #imgWrap ul li {width: 25%;}
+    .stepContent {width: 50%;}
+    .stepContent ul {width: 400%;}
+    .stepContent ul li {width: 25%;}
+    #clientSystem ul {width: 90%;}
+    #clientSystem ul li {width: 48.5%;}
+}
 /*sub2*/
 #solImg.slide2 {background: url(../images/slide2.jpg) no-repeat center / cover;}
 /*  */
@@ -93,8 +106,9 @@ h3 {text-align: center; font-size: 50px; margin-top: 180px;}
 #sol4 h4 {font-size: 30px; margin-bottom: 20px;}
 #sol4 > p {font-size: 22px;}
 #sol4 ul {display: flex; justify-content: space-around; margin-top: 50px;}
-#sol4 ul li {width: 350px; height: 200px;}
-#sol4 ul li p:first-child {font-size: 25px; margin-bottom: 30px}
+#sol4 ul li {width: 350px; height: 200px; border-radius: 30px;
+            border: 1px solid #ccc; padding-top: 20px;}
+#sol4 ul li p:first-child {font-size: 25px; margin-bottom: 30px; color:#0074b7;}
 #sol4 ul li p:last-child {font-size: 20px;}
 /*  */
 #solContent4 {margin: 100px auto 0; text-align: center; display: flex; justify-content: space-between; flex-flow: wrap;}
