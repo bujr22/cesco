@@ -11,8 +11,8 @@ $("#header div").on('mouseleave', function() {
   $('.gnbView').on('click', function () {
     $('#gnb').toggleClass('mobile');
   })
-  $('.item').on('click', '#gnb.mobile .item', function () {
-    $(this).children('.depth2').slideToggle().parents().siblings().children('.depth2').slideUp();
+  $(document).on('click', '#gnb.mobile .item', function () {
+    $(this).children('.depth2:not(:animated)').slideToggle().parents().siblings().children('.depth2').slideUp();
   })
 
 })
