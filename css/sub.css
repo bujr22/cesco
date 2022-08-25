@@ -26,6 +26,10 @@ h3 {text-align: center; font-size: 50px; margin-top: 180px;}
     #apply {width: 100%; padding:0 25px }
     #apply div {width: 100%;}
 }
+@media screen and (max-width:999px) {
+    #solutionList {width: 80%; flex-wrap: wrap;}
+    #solutionList li {width: 33.3%;}
+}
 /* sub1*/
 #solStep {margin-top: 120px;}
 #solStep > ul {width: 1000px; display: flex; margin: 0 auto;}
