@@ -58,7 +58,13 @@ let slider = function() {
   })
 }
 let mobileSlider = function () {
-  $('.sliderList').slick();
+  // $('.sliderList').slick({
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  // });
+        
 }
 let sliderAction = function () {
   if ( $(window).innerWidth() < 1000 ) {

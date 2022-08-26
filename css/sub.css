@@ -99,6 +99,25 @@ h3 {text-align: center; font-size: 50px; margin-top: 180px;}
             background: url(../images/sub22.jpg) no-repeat center}
 /* sub3 */
 #solImg.slide3 {background: url(../images/slide3.png) no-repeat center / cover;}
+#sol3 {margin: 100px auto 0; text-align: center;}
+#sol3 h4 {font-size: 30px;}
+#sol3 ul {width: 90%; display: flex; justify-content: space-between; margin: 50px auto 0;}
+#sol3 ul li {width: 45%; height: 300px; text-align: left;}
+#sol3 ul li div {font-size: 27px; margin-bottom: 20px;}
+#sol3 ul li p {font-size: 22px;}
+#sol3 ul li p span {color:#0074b7;}
+#sol3 ul li.bioImg {background: url(../images/bioImg.png) no-repeat center / cover;}
+#sol32 {margin: 100px auto 0; text-align: center;}
+#sol32 h4 {font-size: 30px;}
+#sol32 > ul {margin-top: 50px; padding: 0 30px 0;}
+.bioWrap {display:flex; margin-bottom: 50px; justify-content:space-between  ;}
+.bioWrap li {width: 45%; text-align: left; height: 280px;}
+.bioWrap li div.bioH {font-size: 27px; border-bottom: 1px solid #ccc; margin-bottom: 20px;}
+.bioWrap li div.bioC {font-size: 22px; margin-bottom: 10px;}
+.bioWrap li p {font-size: 18px; line-height: 30px;}
+.bioWrap li p span {color: #0074b7;}
+.bioCare1 {background: url(../images/bioCare1.png) no-repeat center / cover;}
+.bioCare2 {background: url(../images/bioCare1.png) no-repeat center / cover;}
 /* sub4 */
 #solImg.slide4 {background: url(../images/slide4.png) no-repeat center / cover;}
 /*  */
@@ -121,6 +140,12 @@ h3 {text-align: center; font-size: 50px; margin-top: 180px;}
 #solContent4 .warterWrap div p:first-child {font-size: 25px; margin-bottom: 10px;
                                     color:#0074b7;}
 #solContent4 .warterWrap div p:last-child {font-size:20px;}
+@media screen and (max-width:999px) {
+    #sol4 ul {width: 95%; margin: 50px auto 0;}
+    #sol4 ul li {width: 30%;}
+    #solContent4 {justify-content: center;}
+    #solContent4 .warterWrap {margin: 0 auto; width: 70%;}
+}
 /* sub5 */
 #solImg.slide5 {background: url(../images/slide5.jpg) no-repeat center / cover;}
 #sol5 {margin: 0 auto; text-align: center;}
