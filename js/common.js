@@ -1,12 +1,22 @@
+let resizing = ()=> {
+  if ( $(window).width() > 1400 ) {
+    $("#gnb .depth2").css({ display: 'block' })
+    $("#gnb").removeClass('mobile')
+  }
+  else {
+    $("#gnb .depth2").css({ display: 'none' })
+  }
+}
+$(window).on('resize', function() {
+  resizing();
+})
 // header
-$("#gnb").on('mouseenter', function() {
+$(".depth1").on('mouseenter', function() {
   $("#header").addClass('on')
 })
 $("#header").on('mouseleave', function() {
-  $("#header").removeClass('on')
+  $(this).removeClass('on')
 })
-$("#header div").on('mouseleave', function() {
-  $("#header div").removeClass('on')
   // 모바일
   $('.gnbView').on('click', function () {
     $('#gnb').toggleClass('mobile');
@@ -14,5 +24,3 @@ $("#header div").on('mouseleave', function() {
   $(document).on('click', '#gnb.mobile .item', function () {
     $(this).children('.depth2:not(:animated)').slideToggle().parents().siblings().children('.depth2').slideUp();
   })
-
-})

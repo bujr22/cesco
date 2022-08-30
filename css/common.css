@@ -10,7 +10,7 @@ body, h1, h2, h3, h4, ul, li, p, a { margin: 0; padding:0;}
 ul, li {list-style: none;}
 a { text-decoration: none;}
 .hidden {position: absolute; left: -99999px;}
-body { margin: 0 auto; font-family: 'SpoqaHanSansNeo-Regular'; min-width: 800px;}
+body { margin: 0 auto; font-family: 'SpoqaHanSansNeo-Regular'; min-width: 1200px;}
 /* header */
 #header {overflow: hidden; position: absolute; top:0; left: 0; z-index: 999; width: 100%; height: 80px; background: #fff;
         display: flex; transition: 0.4s;}
@@ -27,6 +27,7 @@ body { margin: 0 auto; font-family: 'SpoqaHanSansNeo-Regular'; min-width: 800px;
 .depth1 > li > a {display: block; height: 80px; padding: 30px 25px 0; box-sizing: border-box; color: #000; font-size: 20px}
 .depth2 li {line-height: 50px;}
 .depth2 li a {color: #000}
+#header.on .depth2 li a:hover {font-weight: bold; color:#4096d4;}
 @media screen and (min-width:1400px) {
 .gnbView {display: none;}
 #header.on div {border-bottom: 1px solid #dedede;}
@@ -34,7 +35,7 @@ body { margin: 0 auto; font-family: 'SpoqaHanSansNeo-Regular'; min-width: 800px;
 #gnb {margin-left: 250px;}
 #header.on .depth1 > li:hover { border-bottom: 3px solid #4096d4; }
 .depth2 {position: absolute; top:50px; width: 100%; box-sizing: border-box; padding:30px 0}
-#header.on .depth2 li a:hover {font-weight: bold; color:#4096d4;}
+
 }
 @media screen and (max-width: 1399px) {
         #header {position: fixed; top:0; left:0;}
