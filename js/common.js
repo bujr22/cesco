@@ -1,70 +1,26 @@
-// //스크롤
-// let n = 1;
-// let num;
-// let state = 1;
-// let scrolling = function(e) {
-//   let secPos;
-//   if ( e.wheelDelta < 0 && state == 1 ) {
-//     state = 0;
-//     n++;
-//     if ( n==5 ) {
-//       n=4;
-//       state = 1;
-//       window.addEventListener('load', function () {
-//         this.setTimeout(function() {
-//             scrollTo(0,0)
-//         }, 10)
-//       })
-//     }
-//     else {
-//       secPos = $("#sec"+n).position().top;
-//       $("html, body").animate({ scrollTop: secPos }, 500, function() {
-//         state = 1;
-//       })
-//     }
-//   }
-//   else if ( e.wheelDelta > 0 && state == 1 ) {
-//     state = 0;
-//     n--;
-//     if ( n<1 ) {
-//       n=1;
-//       state = 1;
-//     }
-//     else {
-//       secPos = $("#sec"+n).position().top;
-//       $("html, body").animate({ scrollTop: secPos }, 500, function() {
-//         state = 1;
-//       })
-//     }
-//   }
-//   console.log(n)
-//   num = n-1;
-// }
-// document.addEventListener('wheel', function(e){
-//     e.preventDefault();
-//     scrolling(e)
-//   }, {passive: false})
-
-$("#gnb li").on('click', function() {
-    let idName = $(this).children('a').attr('href')
-    let idLength = idName.length;
-    console.log(idLength)
-    let pos = $(idName).position().top;
-    $("html, body").animate({ scrollTop: pos }, 500)
-    n = idName.substr(idLength-1,1)
-    console.log(n)
+let resizing = ()=> {
+  if ( $(window).width() > 1400 ) {
+    $("#gnb .depth2").css({ display: 'block' })
+    $("#gnb").removeClass('mobile')
+  }
+  else {
+    $("#gnb .depth2").css({ display: 'none' })
+  }
+}
+$(window).on('resize', function() {
+  resizing();
+})
+// header
+$(".depth1").on('mouseenter', function() {
+  $("#header").addClass('on')
+})
+$("#header").on('mouseleave', function() {
+  $(this).removeClass('on')
+})
+  // 모바일
+  $('.gnbView').on('click', function () {
+    $('#gnb').toggleClass('mobile');
   })
-let state = 1;
-$(window).on('scroll', function () {
-  if ( $(window).scrollTop() >= 1700 && state == 1 ) {
-    state = 0;
-    $('.work > .cesco').animate({marginRight:0, opacity:1}, 700)
-  }
-})
-let state2 = 1;
-$(window).on('scroll', function () {
-  if ( $(window).scrollTop() >= 1950 && state2 == 1 ) {
-    state2 = 0;
-    $('.work > .soon').animate({marginLeft:0, opacity:1}, 700)
-  }
-})
+  $(document).on('click', '#gnb.mobile .item', function () {
+    $(this).children('.depth2:not(:animated)').slideToggle().parents().siblings().children('.depth2').slideUp();
+  })
